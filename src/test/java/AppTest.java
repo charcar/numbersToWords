@@ -10,10 +10,10 @@ public class AppTest {
     assertEquals(stringNumber, app.numbersToWords(1));
   }
 
-  @Test
-  public void numbersToWords_returnsAStringForATwoDigitNumber_12() {
-    App app = new App();
-    String stringNumber = "twelve";
-    assertEquals(stringNumber, app.numbersToWords(12));
-  }
+  // @Test
+  // public void numbersToWords_returnsAStringForATwoDigitNumber_12() {
+  //   App app = new App();
+  //   String stringNumber = "twelve";
+  //   assertEquals(stringNumber, app.numbersToWords(12));
+  // }
 }
