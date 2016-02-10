@@ -26,20 +26,29 @@ public class App {
           singleDigitHash.put('7', "seven");
           singleDigitHash.put('8', "eight");
           singleDigitHash.put('9', "nine");
-          // singleDigitHash.put('10', "ten");
-          // singleDigitHash.put('11', "eleven");
-          // singleDigitHash.put('12', "twelve");
-          // singleDigitHash.put('13', "thirteen");
-          // singleDigitHash.put('14', "fourteen");
-          // singleDigitHash.put('15', "fifteen");
-          // singleDigitHash.put('16', "sixteen");
-          // singleDigitHash.put('17', "seventeen");
-          // singleDigitHash.put('18', "eighteen");
-          // singleDigitHash.put('19', "nineteen");
 
         for (char eachDigit : numberCharArray) {
           stringNumberValue  = singleDigitHash.get(eachDigit);
         } return stringNumberValue;
+
+      String doubleDigitStringNumber = inputNumber.toString();
+      String[] doubleDigitStringArray = doubleDigitStringNumber.split("");
+      String doubleDigitStringNumberValue = "";
+      HashMap<String, String> doubleDigitHash = new HashMap<String, String>();
+          doubleDigitHash.put("10", "ten");
+          doubleDigitHash.put("11", "eleven");
+          doubleDigitHash.put("12", "twelve");
+          doubleDigitHash.put("13", "thirteen");
+          doubleDigitHash.put("14", "fourteen");
+          doubleDigitHash.put("15", "fifteen");
+          doubleDigitHash.put("16", "sixteen");
+          doubleDigitHash.put("17", "seventeen");
+          doubleDigitHash.put("18", "eighteen");
+          doubleDigitHash.put("19", "nineteen");
+
+        for (String eachDoubleDigit : doubleDigitStringArray) {
+          doubleDigitStringNumberValue = doubleDigitHash.get(eachDoubleDigit);
+        } return doubleDigitStringNumberValue;
       }
     }
 
